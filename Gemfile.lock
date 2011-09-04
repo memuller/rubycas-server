@@ -37,6 +37,7 @@ GEM
       rake (>= 0.8.7)
     gettext (2.1.0)
       locale (>= 2.0.5)
+    haml (3.1.2)
     json_pure (1.5.1)
     locale (2.0.5)
     mime-types (1.16)
@@ -79,6 +80,7 @@ PLATFORMS
 DEPENDENCIES
   activeresource (~> 2.3.12)
   capybara
+  haml
   mysql
   net-ldap (~> 0.1.1)
   rack-test

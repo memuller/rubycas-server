@@ -3,3 +3,4 @@ gemspec
 
 gem 'mysql'
 gem 'thin'
+gem 'haml'
