@@ -1,0 +1,15 @@
+%form#login-form{:action => @form_action || "login", :method => "post"}
+  .field
+    %label{:for => 'username'}
+      = _('Username')
+    %input#username{:name => 'username', :type => 'text', :size => 32}
+  .field
+    %label{:for => 'password'}
+      = _('Password')
+    %input#password{:name => 'password', :type => 'password', :size => 32}
+
+    
+  %input#lt{:name => "lt", :type => "hidden", :value => @lt}
+  %input#service{:name => "service", :type => "hidden", :value => @service}
+  
+  %input#login-submit.button{:type => "submit", :value => _("LOGIN")}
