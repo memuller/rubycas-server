@@ -1,0 +1,6 @@
+- if @message
+  %div{:class => "messagebox #{escape_html @message[:type]}"}
+    = @message[:message]
+
+.login_container
+  = haml(:_login_form, :layout => false)
