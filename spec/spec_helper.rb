@@ -68,7 +68,7 @@ def load_server(config_file)
   
   CASServer::Server.enable(:raise_errors)
   CASServer::Server.disable(:show_exceptions)
-
+  CASServer::Server.config[:template_engine] = 'haml'
   #Capybara.current_driver = :selenium
   Capybara.app = CASServer::Server
 end
